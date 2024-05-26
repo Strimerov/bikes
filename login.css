@@ -1,0 +1,63 @@
+body{
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center; /* выравнивание по центру по вертикали и по горизонтали*/
+    min-height: 100vh;
+    background: #2c0033;
+    margin: 0px;
+}
+
+input[type="text"], input[type="password"]{
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+input[type="checkbox"]{
+    margin-bottom: 30px;
+}
+
+input[type="submit"]{
+    background: #355ed4;
+    padding: 10px;
+    color: white;
+    border: none;
+    width: 100%;
+}
+
+.container{
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media (max-width: 992px){
+        grid-template-columns: 100%;
+    }
+}
+
+.image{
+    background: url(bg.jpg);
+    background-size: cover;
+    @media(max-width: 992px){
+        display: none;
+    }
+}
+
+.form{
+    padding: 50px;
+    background: white;
+}
+.form h2{
+    text-align: center;
+}
+.link{
+    padding: 15px;
+}
+.btn:hover{
+    opacity: 0.8;
+    color: #8292bf;
+}
+
+
+

@@ -1,0 +1,385 @@
+body{
+    margin: 0px;
+    background-color: rgb(171, 153, 153);
+}
+.menu{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    width: 80%;
+    background-color: #2c0033;
+    @media (min-width: 0px) and (max-width: 576px){
+        grid-template-columns: repeat(1, 100%);
+        width: 100%;
+    }
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.container{
+    background: #2c0033;
+    padding: 20px;
+}
+.bg{
+    height: calc(100vh - 16px);
+    background: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+}
+
+.reviews{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap:30px;
+    width: 75%;
+    margin: auto;
+    padding: 50px 100px 50px 100px;
+
+    @media (min-width: 0px) and (max-width: 576px){
+        grid-template-columns: repeat(1, 100%);
+        padding-top: 50px;
+    }
+
+    @media (min-width: 576px) and (max-width: 992px){
+        padding-top: 70px;
+    }
+}
+.review{
+    background-color: #8f4040;
+    padding: 50px;
+    text-align: center;
+}
+.avatar{
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    background: url(b6e26f1e5c9b11eebb3cceda526c50ab_upscaled.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+}
+.name{
+    padding: 10px;
+}
+.text{
+    padding: 10px;
+}
+.data{
+    padding: 25px;
+    text-align: center;
+}
+.block{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: rgb(171, 153, 153);
+
+    @media (min-width: 0px) and (max-width: 576px){
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+
+    @media (min-width: 576px) and (max-width: 992px){
+        padding-bottom: 70px;
+        padding-top: 100px;
+    }
+}
+
+.block_text{
+    font-size: 24px;
+    line-height: 1.7;
+    margin-right: 50px;
+}
+.block_photo{
+    height: 600px;
+    background: url(base.jpg);
+}
+.block_container{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    @media (min-width: 0px) and (max-width: 992px){
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+.product_container{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    font-size: 36px;
+    background: #ded1d1;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 20px));
+    width: 80%;
+    padding: 50px 100px 50px 100px;
+    margin: auto;
+    gap: 20px;
+    @media (min-width: 576px) and (max-width: 992px){
+        grid-template-columns: repeat(2, 50%);
+        padding-bottom: 100px;
+        padding-top: 70px;
+    }
+
+    @media (min-width: 0px) and (max-width: 576px){
+        grid-template-columns: repeat(1, 100%);
+        padding-bottom: 70px;
+        padding-top: 50px;
+    }
+}
+.product_photo1{
+    height: 400px;
+    background: url(product1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_photo2{
+    height: 400px;
+    background: url(product2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_photo3{
+    height: 400px;
+    background: url(product3.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_photo4{
+    height: 400px;
+    background: url(product4.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_photo5{
+    height: 400px;
+    background: url(product5.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_photo6{
+    height: 400px;
+    background: url(product6.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_photo7{
+    height: 400px;
+    background: url(product7.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_photo8{
+    height: 400px;
+    background: url(product8.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+.product_name{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+.product_price{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(238, 66, 19);
+}
+.menu_item a:hover{
+    text-align: center;
+    @media (min-width: 0px) and (max-width: 576px){
+        border-bottom: 1px solid #3b4842;
+        padding: 10px 0px 10px 0px;
+        display: none;
+    }
+    transition: color 1s linear;
+}
+a:hover{
+    color: hsl(0, 10%, 69%);
+}
+.product:hover{
+    opacity: 0.8;
+}
+.chk:checked ~ .menu_item{
+    display: block;   
+}
+.chk{
+    display: none;
+}
+label{
+    @media (min-width: 576px){
+        display: none;
+    }
+    color: rgb(255, 253, 253);
+    margin: auto;
+}
+
+.menu_item{
+    display: block;
+    @media (min-width: 0px) and (max-width: 576px){
+        display: none;
+    }
+}
+.ot{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.reviews_container{
+    margin: auto;
+    width: 70%;
+}
+textarea{
+    width: 100%;
+}
+.btn{
+    opacity: 0.8;
+    color: #8292bf;
+    background: #355ed4;
+    color: white;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    font-size: 16px
+}
+.op{
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+.review{
+    background: rgb(253, 250, 250);
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 2
+}
+.menu_item .active{
+    color: red;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3 - 30px));
+    gap: 30px;
+    transition: opacity 0.35s linear;
+}
+.image1{
+    background: url(unnamed.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image2{
+    background: url(phots1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image3{
+    background: url(phots2.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image4{
+    background: url(phots3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image5{
+    background: url(phots4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image6{
+    background: url(phots5.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image7{
+    background: url(phots6.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image8{
+    background: url(phots7.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image9{
+    background: url(phots8.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    opacity: 0.8;
+}
+.image1:hover,
+.image2:hover,
+.image3:hover,
+.image4:hover,
+.image5:hover,
+.image6:hover,
+.image7:hover,
+.image8:hover,
+.image9:hover
+{
+    opacity: 1;
+    transition: opacity, transform 0.45s linear;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color: #235bdd;
+}
+.phots{
+    text-align: center;
+    font-size: 40px;
+}
+.phots span{
+    background: rgb(227, 77, 77);
+    color: white;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    padding: 2px 15px 2px 15px;
+}
+
+
+
+
